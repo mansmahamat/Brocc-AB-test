@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { QueryInformation } from '../components/';
 
 function QueryInformationContainer({ minus, plus }) {
@@ -13,5 +14,10 @@ function QueryInformationContainer({ minus, plus }) {
     </QueryInformation>
   );
 }
+
+QueryInformationContainer.propTypes = {
+  minus: PropTypes.func,
+  plus: PropTypes.func,
+};
 
 export default QueryInformationContainer;

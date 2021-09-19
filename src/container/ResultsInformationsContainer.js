@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ResultsInformations } from '../components/';
 import { useQuery } from 'react-query';
 import { Data } from '../data/GithubArray';
@@ -38,5 +39,9 @@ function ResultsInformationsContainer({ count }) {
     </ResultsInformations>
   );
 }
+
+ResultsInformationsContainer.propTypes = {
+  count: PropTypes.number,
+};
 
 export default ResultsInformationsContainer;
